@@ -10,7 +10,6 @@
 		021029D02460D0A60004CCC1 /* node.obj in Resources */ = {isa = PBXBuildFile; fileRef = 021029CF2460D0A60004CCC1 /* node.obj */; };
 		02B09402245EEB5100C2458E /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B920D4245EDA8F00919E97 /* FileHelper.swift */; };
 		02B09405245EF0C700C2458E /* cube.obj in Resources */ = {isa = PBXBuildFile; fileRef = 02B09403245EF09C00C2458E /* cube.obj */; };
-		02B09407245EF69F00C2458E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 02B09406245EF69F00C2458E /* Podfile */; };
 		02B920A5245ED81100919E97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B920A4245ED81100919E97 /* AppDelegate.swift */; };
 		02B920A7245ED81100919E97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B920A6245ED81100919E97 /* SceneDelegate.swift */; };
 		02B920A9245ED81100919E97 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B920A8245ED81100919E97 /* SceneViewController.swift */; };
@@ -278,7 +277,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				02B920B1245ED81200919E97 /* LaunchScreen.storyboard in Resources */,
-				02B09407245EF69F00C2458E /* Podfile in Resources */,
 				02B920AE245ED81200919E97 /* Assets.xcassets in Resources */,
 				02B920CB245ED97B00919E97 /* floor.png in Resources */,
 				021029D02460D0A60004CCC1 /* node.obj in Resources */,
