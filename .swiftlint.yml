@@ -1,0 +1,29 @@
+disabled_rules:
+  - line_length
+  - variable_name
+  - function_parameter_count
+  - operator_whitespace
+  - trailing_whitespace
+  - file_length
+  - todo
+  - implicit_return
+opt_in_rules:
+  - contains_over_first_not_nil
+  - empty_count
+  - explicit_init
+  - first_where
+  - redundant_nil_coalescing
+  - sorted_first_last
+empty_count: warning
+cyclomatic_complexity:
+  - 20
+  - 50
+force_cast: warning
+force_try: warning
+function_body_length:
+  - 300
+  - 500
+type_body_length:
+  - 400
+  - 600
+

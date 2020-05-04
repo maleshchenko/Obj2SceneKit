@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gI5-3i-2Yi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scene View Controller-->
+        <scene sceneID="Xmz-p5-I7d">
+            <objects>
+                <viewController id="8iF-md-4FH" customClass="SceneViewController" customModule="SceneKitTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DQW-ra-zRO"/>
+                        <viewControllerLayoutGuide type="bottom" id="hdk-w5-SFw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XB8-UT-bf6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="" allowsCameraControl="YES" autoenablesDefaultLighting="YES" preferredRenderingAPI="1" translatesAutoresizingMaskIntoConstraints="NO" id="ceV-MG-P8i">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </sceneKitView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SIZ-kF-6dy">
+                                <rect key="frame" x="132" y="447" width="150" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="cRh-zN-jGe"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SIZ-kF-6dy" firstAttribute="centerY" secondItem="XB8-UT-bf6" secondAttribute="centerY" id="4fk-Mz-rOZ"/>
+                            <constraint firstItem="SIZ-kF-6dy" firstAttribute="centerX" secondItem="XB8-UT-bf6" secondAttribute="centerX" id="L85-tb-1wm"/>
+                            <constraint firstAttribute="trailing" secondItem="ceV-MG-P8i" secondAttribute="trailing" id="hAq-3k-5Ru"/>
+                            <constraint firstAttribute="bottom" secondItem="ceV-MG-P8i" secondAttribute="bottom" id="hdE-Qt-sJm"/>
+                            <constraint firstItem="ceV-MG-P8i" firstAttribute="leading" secondItem="XB8-UT-bf6" secondAttribute="leading" id="ow7-9H-TMk"/>
+                            <constraint firstItem="ceV-MG-P8i" firstAttribute="top" secondItem="XB8-UT-bf6" secondAttribute="top" id="tMs-RQ-lOp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Yo-6A-kfe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5po-kD-xoE"/>
+                    <connections>
+                        <outlet property="progressView" destination="SIZ-kF-6dy" id="dJn-Zh-Hc3"/>
+                        <outlet property="sceneView" destination="ceV-MG-P8i" id="pBY-lc-NBf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="az2-4a-OwE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702.89855072463774" y="946.875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="D0r-f9-l4f">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="gI5-3i-2Yi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="bc2-nh-Qui">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8iF-md-4FH" kind="relationship" relationship="rootViewController" id="sxN-n3-cLk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HiL-S4-JhA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-155" y="947"/>
+        </scene>
+    </scenes>
+</document>
