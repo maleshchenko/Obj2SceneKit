@@ -12,4 +12,4 @@ Normally, it's possible to load .obj directly into SCNScene:
  
 However, if you need to load only a part of the data (for instance, just vertices of texture coordinates), you can pase .obj data you need, see `FileParser.swift` and `FileHelper.swift`
 
-The test project uses Swift lint as a CocoaPod. cd into Obj2SceneKit, run `pod install`
+The test project uses SwiftLint as a CocoaPod. cd into Obj2SceneKit, run `pod install`
